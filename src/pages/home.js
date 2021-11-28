@@ -24,7 +24,8 @@ const Home = () => {
         }}
       />
       {videos.length === 0 ? (
-        <Spinner animation="grow" variant="light" className="my-auto mx-auto" />
+        <Spinner animation="grow" variant="light" className="my-auto mx-auto" style={{ position : 'absolute' , top:0, bottom:0, right:0, left:0
+       }} />
       ) : (
         <Row xs={1} md={3} className="g-4">
           {videos
